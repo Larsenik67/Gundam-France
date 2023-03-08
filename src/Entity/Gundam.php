@@ -9,10 +9,9 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
-#[ORM\Entity]
-#[Vich\Uploadable]
 /**
  * @ORM\Entity(repositoryClass=GundamRepository::class)
+ * @Vich\Uploadable
  */
 class Gundam
 {
@@ -43,8 +42,17 @@ class Gundam
      */
     private $stock;
 
-    #[Vich\UploadableField(mapping: 'products', fileNameProperty: 'imageName', size: 'imageSize')]
-    private ?File $image = null;
+    /**
+     * @ORM\Column(type="string", length=255)
+     * @var string
+     */
+    private $image;
+
+    /**
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
 
     /**
      * @ORM\ManyToOne(targetEntity=category::class, inversedBy="gundams")
@@ -173,6 +181,30 @@ class Gundam
     public function setImage(File $file = null)
     {
         $this->image = $file;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of imageFile
+     *
+     * @return  File
+     */ 
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * Set the value of imageFile
+     *
+     * @param  File  $imageFile
+     *
+     * @return  self
+     */ 
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
 
         return $this;
     }
