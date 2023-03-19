@@ -26,7 +26,7 @@ class Category
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Gundam::class, mappedBy="category")
+     * @ORM\OneToMany(targetEntity=Gundam::class, mappedBy="Category")
      */
     private $gundams;
 
