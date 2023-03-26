@@ -55,7 +55,7 @@ class Gundam
     private $imageFile;
 
     /**
-     * @ORM\ManyToOne(targetEntity=category::class, inversedBy="gundams")
+     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="gundams")
      * @ORM\JoinColumn(nullable=false)
      */
     private $category;

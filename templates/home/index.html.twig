@@ -3,18 +3,69 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/laragon/www/GundamFrance/gundam_france/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/laragon/www/GundamFrance/gundam_france/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
+<div id="carouselExampleControls" class="carousel slide my-5" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href=""><img class="d-block w-100" src="https://riseofgunpla.com/wp-content/uploads/2022/10/Banniere_WfM-gundam-witch-from-mercury.jpg" alt="First slide"></a>
+        </div>
+        <div class="carousel-item">
+            <a href=""><img class="d-block w-100" src="https://riseofgunpla.com/wp-content/uploads/2023/02/KYOUKAI-SENKI-BANNIERE-ROG-destockage-min.jpg" alt="Second slide"></a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <i class="fa-solid fa-circle-left"></i>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <i class="fa-solid fa-circle-right"></i>
+    </a>
+</div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">Nouveauté</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="best-tab" data-toggle="tab" href="#best" role="tab" aria-controls="best" aria-selected="false">Meilleur ventes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="last-tab" data-toggle="tab" href="#last" role="tab" aria-controls="last" aria-selected="false">Dernier exemplaire</a>
+  </li>
+</ul>
+<div class="tab-content mt-5" id="myTabContent">
+    <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+        <div class="row">
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="best" role="tabpanel" aria-labelledby="best-tab">
+        <div class="row">
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="last" role="tabpanel" aria-labelledby="last-tab">
+        <div class="row">
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+            <div class="article"><a href="#"><img src="https://tamashiinations.fr/16145-large_default/gundam-figurine-side-ms-gundam-aerial-ver-anime-the-robot-spirits.jpg" alt=""></a></div>
+        </div>
+    </div>
 </div>
 {% endblock %}

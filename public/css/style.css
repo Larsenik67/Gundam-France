@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+a:link { text-decoration: none; 
+    color: black;}
+
+
+a:visited { text-decoration: none; 
+    color: black;}
+
+
+a:hover { text-decoration: none; 
+    color: black;}
+
+
+a:active { text-decoration: none; 
+    color: black;}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     width: 100%;
     padding-top: 1em;
@@ -11,4 +33,58 @@ nav {
 
 #search {
     width: 100%;
+}
+
+.category {
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+    margin: 0;
+    font-size: x-large;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel > a {
+    font-size: 5em;
+}
+
+.tab-content > .tab-pane > .row {
+    gap: 5em;
+    justify-content: center;
+}
+
+.article {
+    display: table-cell;
+    height: 17em;
+    width: 17em;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.article > a{
+    width: inherit;
+    height: inherit;
+}
+
+.article > a > img {
+    width: inherit;
+    height: inherit;
+    border: 5px solid black;
+}
+
+.titre {
+    text-align: center;
+    vertical-align: middle;
 }
